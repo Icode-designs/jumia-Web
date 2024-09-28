@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scroll-container::-webkit-scrollbar {
+  @apply hidden; /* Hides the scrollbar in Webkit browsers (Chrome, Safari, Edge) */
+}
+
+.scroll-container {
+  scrollbar-width: none; /* Hides scrollbar in Firefox */
+  -ms-overflow-style: none; /* Hides scrollbar in IE 10+ */
+}
